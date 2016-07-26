@@ -30,8 +30,12 @@ class ServiceProvider extends BaseServiceProvider {
     ], 'public');
 
     $this->publishes([
-        __DIR__.'/views' => resource_path('views/vinkas/firebase'),
+        __DIR__.'/resources/views' => resource_path('views/vinkas/firebase'),
     ], 'views');
+
+    $this->publishes([
+        __DIR__.'/resources/lang' => resource_path('lang/vinkas/firebase'),
+    ], 'lang');
   }
 
   /**
