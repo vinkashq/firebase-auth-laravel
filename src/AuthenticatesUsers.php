@@ -36,7 +36,7 @@ trait AuthenticatesUsers
     return $this->onFail('Invalid user');
     else {
       $uid = $jwt->sub;
-      $user = $this->visaLogin($uid, $request);
+      $user = $this->firebaseLogin($uid, $request);
       if($user)
       return response()->json(['success' => true, 'redirectTo' => $this->redirectPath()]);
       else

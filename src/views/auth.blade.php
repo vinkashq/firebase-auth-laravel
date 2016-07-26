@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="/vinkas/firebase/auth.css" />
 </head>
-<body class="visa">
+<body>
   <header id="header">
     <div class="text-center">
       <a href="/" class="logo"><img src="/images/logo.png" /></a>
@@ -77,7 +77,7 @@
         if (currentUser.emailVerified) {
           auth(currentUser, token);
         } else {
-          notice("{!! trans('visa.warning_verify_email') !!}");
+          notice("{!! trans('vinkas.firebase.auth.warning_verify_email') !!}");
         }
         return false;
       }
