@@ -58,4 +58,12 @@ trait AuthenticatesUsers
     return Auth::loginUsingId($uid, $remember);
   }
 
+  protected function firebaseRegister($uid, $request) {
+    $data['id'] = $uid;
+    $data['name'] = $request->has('name') ? $request->input('name') : null;
+    $data['email'] = $request->has('email') ? $request->input('email') : null;
+    $data['photo_url'] = $request->has('photo_url') ? $request->input('photo_url') : null;
+    $this->create($data);
+  }
+
 }
