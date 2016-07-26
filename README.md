@@ -72,3 +72,7 @@ FIREBASE_AUTH_DOMAIN=__________
 
 * [Firebase php JWT](https://github.com/firebase/php-jwt)
 * [FirebaseUI Web](https://github.com/firebase/firebaseui-web)
+
+## Screenshots
+
+![FirebaseUI Web](/screenshots/sign-in-providers.png)
