@@ -1,0 +1,32 @@
+{
+    "name": "vinkas/firebase-auth-laravel",
+    "description": "Firebase Authentication package for Laravel PHP Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinoth Kannan",
+            "email": "vinothkannan@vinkas.com",
+            "homepage": "https://github.com/vinothkananns"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.2",
+        "illuminate/contracts": "^5.2",
+        "firebase/php-jwt": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vinkas\\Firebase\\Auth\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    }
+}

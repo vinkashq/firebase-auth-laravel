@@ -1,0 +1,16 @@
+.visa .login, .visa .register { text-align: center; }
+
+.visa .login .panel { margin-top: 10px; box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.visa .login .panel-body { background-color: #fafafa; padding:10px 15px 10px 15px; }
+.visa .login .social { margin-top:  10px; }
+.visa .social .btn-group .btn { margin-right: 10px; margin-bottom: 10px; color: #757575; box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.visa .social .btn-group .btn img { width: 24px; height: 24px; margin-right: 10px; }
+
+.visa .register .panel { box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.visa .register .panel-body { background-color: #fafafa; padding:20px 15px 15px 15px; }
+.visa .register .social .btn { margin: 10px 10px 10px 0; color: #757575; box-shadow: 0 2px 4px 0 rgba(0,0,0,.25); }
+.visa .register .social .btn img { width: 24px; height: 24px; margin-right: 10px; }
+.visa .register .text-muted { font-size: 12px; }
+
+.visa #header .logo { margin-top: 25px; display: inline-block; }
+.visa #header .logo img { max-height: 50px; }
