@@ -40,13 +40,11 @@
   <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase-auth.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src='/modules/nprogress/nprogress.js'></script>
-  <link rel='stylesheet' href='/modules/nprogress/nprogress.css'/>
   <script>
   var token = "{{ csrf_token() }}";
   var config = {
-    apiKey: "{{ getEnv('FIREBASE_API_KEY')}}",
-    authDomain: "{{ getEnv('FIREBASE_AUTH_DOMAIN')}}",
+    apiKey: "{{ config('vinkas.firebase.auth.api_key') }}",
+    authDomain: "{{ config('vinkas.firebase.auth.auth_domain') }}",
   };
   firebase.initializeApp(config);
   </script>

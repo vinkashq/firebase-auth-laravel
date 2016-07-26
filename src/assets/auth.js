@@ -1,6 +1,5 @@
 function auth(user, token) {
   user.getToken(true).then(function(idToken) {
-    NProgress.inc();
     $.ajax({
       url: '/auth',
       type: "post",
@@ -13,7 +12,6 @@ function auth(user, token) {
       },
       success: function(data){
         if(data.success) {
-          NProgress.set(0.9);
           window.location.replace(data.redirectTo);
         }
         else {
