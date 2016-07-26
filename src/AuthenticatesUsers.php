@@ -52,7 +52,7 @@ trait AuthenticatesUsers
     $user = User::where('id', $uid)->first();
 
     if($user == null)
-    $this->visaRegister($uid, $request);
+    $this->firebaseRegister($uid, $request);
 
     $remember = $request->has('remember') ? $request->input('remember') : false;
     return Auth::loginUsingId($uid, $remember);
