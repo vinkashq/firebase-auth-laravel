@@ -34,3 +34,34 @@ FIREBASE_PROJECT_ID=__________
 FIREBASE_API_KEY=__________
 FIREBASE_AUTH_DOMAIN=__________
 ```
+
+**Update User Provider to your `config/auth.php` file**
+
+```
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'firebase_users', /**** Change 'users' to 'firebase_users' ****/
+        ],
+
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'firebase_users', /**** Change 'users' to 'firebase_users' ****/
+        ],
+    ],
+    
+    'providers' => [
+        'users' => [
+            'driver' => 'eloquent',
+            'model' => App\User::class,
+        ],
+        
+        
+        /**** Add this firebase users provider ****/
+        'firebase_users' => [
+            'driver' => 'eloquent',
+            'model' => Vinkas\Firebase\Auth\User::class,
+        ],
+        /**** ****/
+    ],
+```
