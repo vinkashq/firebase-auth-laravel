@@ -2,6 +2,7 @@
 
 namespace Vinkas\Firebase\Auth\Http;
 
+use Vinkas\Firebase\Auth\User;
 use Validator;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
