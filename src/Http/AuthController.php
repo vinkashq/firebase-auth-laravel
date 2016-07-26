@@ -5,6 +5,7 @@ namespace Vinkas\Firebase\Auth\Http;
 use Validator;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Vinkas\Firebase\Auth\AuthenticatesUsers;
 
 class AuthController extends Controller
 {
@@ -19,7 +20,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesAndRegistersUsers, ThrottlesLogins, AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
