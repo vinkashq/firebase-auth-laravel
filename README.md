@@ -65,3 +65,5 @@ FIREBASE_AUTH_DOMAIN=__________
         /**** ****/
     ],
 ```
+
+**Now open `/auth` (ex: `http://example.com/auth`) page in your app to see firebase auth live in action**
