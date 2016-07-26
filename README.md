@@ -67,3 +67,8 @@ FIREBASE_AUTH_DOMAIN=__________
 ```
 
 **Now open `/auth` (ex: `http://example.com/auth`) page in your app to see firebase auth live in action**
+
+## Dependencies
+
+* [Firebase php JWT](https://github.com/firebase/php-jwt)
+* [FirebaseUI Web](https://github.com/firebase/firebaseui-web)
