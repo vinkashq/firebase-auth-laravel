@@ -6,7 +6,7 @@ use Validator;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
-class AuthController extends BaseController
+class AuthController extends Controller
 {
     /*
     |--------------------------------------------------------------------------
