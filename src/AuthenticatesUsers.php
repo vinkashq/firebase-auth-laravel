@@ -48,13 +48,8 @@ trait AuthenticatesUsers
     return response()->json(['success' => false, 'message' => $message]);
   }
 
-  protected function getUserById($uid) {
-    $user = User::where('id', $uid)->first();
-    return $user;
-  }
-
   protected function firebaseLogin($uid, $request) {
-    $user = $this->getUserById($uid);
+    $user = Auth::getProvider()->retrieveById($uid);
 
     if($user == null)
     $this->firebaseRegister($uid, $request);
