@@ -66,6 +66,14 @@ FIREBASE_AUTH_DOMAIN=__________
     ],
 ```
 
+**Add required routes to your `app/Http/routes.php` file like below**
+
+```
+Route::get('auth', 'Auth\AuthController@getAuth')->name('getAuth');
+Route::post('auth', 'Auth\AuthController@postAuth')->name('postAuth');
+Route::get('logout', 'Auth\AuthController@logout')->name('logout');
+```
+
 **Now open `/auth` (ex: `http://example.com/auth`) page in your app to see firebase auth live in action**
 
 ## Dependencies
