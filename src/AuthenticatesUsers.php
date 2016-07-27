@@ -51,7 +51,7 @@ trait AuthenticatesUsers
   protected function firebaseLogin($uid, $request) {
     $user = Auth::getProvider()->retrieveById($uid);
 
-    if (is_null($user)) {
+    if (is_null($user))
     $this->firebaseRegister($uid, $request);
 
     $remember = $request->has('remember') ? $request->input('remember') : false;
