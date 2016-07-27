@@ -49,7 +49,7 @@ trait AuthenticatesUsers
   }
 
   protected function firebaseLogin($uid, $request) {
-    $user = User::where('id', $uid)->first();
+    $user = self::where('id', $uid)->first();
 
     if($user == null)
     $this->firebaseRegister($uid, $request);
