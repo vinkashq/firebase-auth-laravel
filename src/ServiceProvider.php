@@ -13,10 +13,6 @@ class ServiceProvider extends BaseServiceProvider {
   */
   public function boot()
   {
-    if (! $this->app->routesAreCached()) {
-        require __DIR__.'/routes.php';
-    }
-
     $this->publishes([
       __DIR__.'/config/firebase.php' => config_path('vinkas/firebase/auth.php'),
     ], 'config');
