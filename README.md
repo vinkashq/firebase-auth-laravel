@@ -15,72 +15,14 @@ composer require vinkas/firebase-auth-laravel
 
 ## Usage
 
-**Add Service Provider to your `config/app.php` file**
+* [Configuration](https://community.vinkas.com/t/configuring-firebase-authentication-package-for-laravel-php-framework/13?u=vinothkannans)
+* [MIT License](https://github.com/vinkas0/firebase-auth-laravel/blob/master/LICENSE.txt)
 
-```
-Vinkas\Firebase\Auth\ServiceProvider::class,
-```
+## Screenshots
 
-**Run `php artisan` command to publish package files into your app**
-
-```
-php artisan vendor:publish --provider="Vinkas\Firebase\Auth\ServiceProvider"
-```
-
-**Add your firebase project id, api key and auth domain in `.env` file**
-
-```
-FIREBASE_PROJECT_ID=__________
-FIREBASE_API_KEY=__________
-FIREBASE_AUTH_DOMAIN=__________
-```
-
-**Update User Provider to your `config/auth.php` file**
-
-```
-    'guards' => [
-        'web' => [
-            'driver' => 'session',
-            'provider' => 'firebase_users', /**** Change 'users' to 'firebase_users' ****/
-        ],
-
-        'api' => [
-            'driver' => 'token',
-            'provider' => 'firebase_users', /**** Change 'users' to 'firebase_users' ****/
-        ],
-    ],
-    
-    'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
-        ],
-        
-        
-        /**** Add this firebase users provider ****/
-        'firebase_users' => [
-            'driver' => 'eloquent',
-            'model' => Vinkas\Firebase\Auth\User::class,
-        ],
-        /**** ****/
-    ],
-```
-
-**Add required routes to your `app/Http/routes.php` file like below**
-
-```
-Route::get('auth', 'Auth\AuthController@getAuth')->name('getAuth');
-Route::post('auth', 'Auth\AuthController@postAuth')->name('postAuth');
-Route::get('logout', 'Auth\AuthController@logout')->name('logout');
-```
-
-**Now open `/auth` (ex: `http://example.com/auth`) page in your app to see firebase auth live in action**
+![FirebaseUI Web](/screenshots/sign-in-providers.png)
 
 ## Dependencies
 
 * [Firebase php JWT](https://github.com/firebase/php-jwt)
 * [FirebaseUI Web](https://github.com/firebase/firebaseui-web)
-
-## Screenshots
-
-![FirebaseUI Web](/screenshots/sign-in-providers.png)
