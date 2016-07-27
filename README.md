@@ -15,7 +15,7 @@ composer require vinkas/firebase-auth-laravel
 
 ## Usage
 
-* [Configuration](https://community.vinkas.com/t/configuring-firebase-authentication-package-for-laravel-php-framework/13?u=vinothkannans)
+* [Configuration](https://community.vinkas.com/t/configuring-laravel-firebase-authentication-package/13?u=vinothkannans)
 * [MIT License](https://github.com/vinkas0/firebase-auth-laravel/blob/master/LICENSE.txt)
 
 ## Screenshots
