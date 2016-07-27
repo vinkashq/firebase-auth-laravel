@@ -1,6 +1,7 @@
 {
     "name": "vinkas/firebase-auth-laravel",
     "description": "Firebase Authentication package for Laravel PHP Framework",
+    "keywords": ["firebase", "auth", "authentication", "laravel", "vinkas"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -8,6 +9,10 @@
             "name": "Vinoth Kannan",
             "email": "vinothkannan@vinkas.com",
             "homepage": "https://github.com/vinothkananns"
+        },
+        {
+          "name": "Vinkas",
+          "homepage": "http://vinkas.com"
         }
     ],
     "minimum-stability": "dev",
