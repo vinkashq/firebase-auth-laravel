@@ -4,19 +4,13 @@
 [![Latest Unstable Version](https://poser.pugx.org/vinkas/firebase-auth-laravel/v/unstable.svg)](https://packagist.org/packages/vinkas/firebase-auth-laravel)
 [![License](https://poser.pugx.org/vinkas/firebase-auth-laravel/license.svg)](https://packagist.org/packages/vinkas/firebase-auth-laravel)
 
-## Installation
+## [Installation](https://community.vinkas.com/t/firebase-authentication-package-for-laravel-php-framework/19/3?u=vinothkannans)
 
-#### Via Composer Require
 
-You may install by running the `composer require` command in your terminal:
-```
-composer require vinkas/firebase-auth-laravel
-```
+## Configuration
 
-## Usage
-
-* [Configuration](https://community.vinkas.com/t/configuring-laravel-firebase-authentication-package/13?u=vinothkannans)
-* [MIT License](https://github.com/vinkas0/firebase-auth-laravel/blob/master/LICENSE.txt)
+* [Override Laravel's existing authentication method](https://community.vinkas.com/t/firebase-authentication-package-for-laravel-php-framework/19/5?u=vinothkannans).
+* [Add as additional authentication option](https://community.vinkas.com/t/firebase-authentication-package-for-laravel-php-framework/19/4?u=vinothkannans). Without modifying Laravel's existing methods.
 
 ## Screenshots
 
