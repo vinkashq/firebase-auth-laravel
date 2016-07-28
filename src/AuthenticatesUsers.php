@@ -27,7 +27,7 @@ trait AuthenticatesUsers
     $content = file_get_contents("https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com");
     $kids = json_decode($content, true);
     $jwt = JWT::decode($request->input('id_token'), $kids, array('RS256'));
-    $fbpid = config('vinkas.firebase.auth.project_id');
+    $fbpid = property_exists($this, 'firebaseProjectId') ? $this->firebaseProjectId : config('vinkas.firebase.auth.project_id');
     $issuer = 'https://securetoken.google.com/' . $fbpid;
     if($jwt->aud != $fbpid)
     return $this->onFail('Invalid audience');
