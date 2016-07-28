@@ -13,7 +13,8 @@ trait AuthenticatesUsers
 {
 
   public function getAuth(Request $request) {
-    return view('vinkas.firebase.auth');
+    var firebaseAuth = property_exists($this, 'firebaseAuthView') ? $this->firebaseAuthView : 'vinkas.firebase.auth';
+    return view(firebaseAuth);
   }
 
   public function postAuth(Request $request) {
