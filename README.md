@@ -36,8 +36,8 @@ FIREBASE_AUTH_DOMAIN=__________
 
 ## Configuration
 
-* [Override Laravel's existing authentication method](https://community.vinkas.com/t/firebase-authentication-package-for-laravel-php-framework/19/5?u=vinothkannans).
-* [Add as additional authentication option](https://community.vinkas.com/t/firebase-authentication-package-for-laravel-php-framework/19/4?u=vinothkannans). Without modifying Laravel's existing methods.
+* [Override Laravel's existing authentication method](https://github.com/vinkas0/firebase-auth-laravel/wiki/Override-Laravel's-existing-authentication-method).
+* [Add as additional authentication option](https://github.com/vinkas0/firebase-auth-laravel/wiki/Add-as-additional-authentication-option). Without modifying Laravel's existing methods.
 
 ## Screenshots
 
