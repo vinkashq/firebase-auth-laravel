@@ -3,8 +3,8 @@
 namespace Vinkas\Firebase\Auth\Http;
 
 use Vinkas\Firebase\Auth\User;
-use Validator;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 use Vinkas\Firebase\Auth\AuthenticatesUsers;
 
 class AuthController extends Controller
@@ -20,7 +20,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, AuthenticatesUsers;
+    use RegistersUsers, AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
@@ -36,7 +36,7 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        $this->middleware('guest');
     }
 
     /**
