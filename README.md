@@ -1,6 +1,6 @@
 # Firebase Authentication package for Laravel PHP framework
 
-[![Discourse on Codiss](https://img.shields.io/badge/discourse-on_codiss-blue.svg?style=flat-square)](https://codiss.com/c/firebase-auth-laravel)
+[![Discuss Group](https://img.shields.io/badge/discuss.group-vinkas-blue.svg?style=flat-square)](http://vinkas.discuss.group/c/firebase-auth-laravel)
 [![Latest Stable Version](https://poser.pugx.org/vinkas/firebase-auth-laravel/v/stable.svg?format=flat-square)](https://packagist.org/packages/vinkas/firebase-auth-laravel)
 [![Latest Unstable Version](https://poser.pugx.org/vinkas/firebase-auth-laravel/v/unstable.svg?format=flat-square)](https://packagist.org/packages/vinkas/firebase-auth-laravel)
 [![Total Downloads](https://img.shields.io/packagist/dt/vinkas/firebase-auth-laravel.svg?style=flat-square)](https://packagist.org/packages/vinkas/firebase-auth-laravel)
@@ -37,8 +37,8 @@ FIREBASE_AUTH_DOMAIN=__________
 
 ## Configuration
 
-* [Override Laravel's existing authentication method](https://codiss.com/t/override-laravels-existing-authentication-method/21).
-* [Add as additional authentication option](https://codiss.com/t/add-as-additional-authentication-option/22). Without modifying Laravel's existing methods.
+* [Override Laravel's existing authentication method](http://vinkas.discuss.group/t/Override-Laravels-existing-authentication-method/81).
+* [Add as additional authentication option](http://vinkas.discuss.group/t/Add-as-additional-authentication-option/80). Without modifying Laravel's existing methods.
 
 ## Screenshots
 
